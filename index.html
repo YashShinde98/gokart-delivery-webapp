@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokart - Grocery Delivery in Minutes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">GOKART</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Select Location</a>
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Delivery Time Banner -->
+    <div class="delivery-banner">
+        <p>Delivery in <span class="delivery-time">10-15 mins</span> | Free delivery on orders above ₹99</p>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="categories-container">
+        <h2>Shop by Category</h2>
+        <div class="categories">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80" alt="Fruits & Vegetables">
+                <p>Fruits & Vegetables</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80" alt="Dairy & Breakfast">
+                <p>Dairy & Breakfast</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80" alt="Snacks & Branded Foods">
+                <p>Snacks & Branded Foods</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80" alt="Beverages">
+                <p>Beverages</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80" alt="Personal Care">
+                <p>Personal Care</p>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/80" alt="Home Care">
+                <p>Home Care</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="products-container">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <!-- Product cards will be added dynamically with JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>GOKART</h3>
+                <p>Grocery delivery in minutes</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@gokart.com</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            </div>
+            <div class="footer-section">
+                <h3>Download App</h3>
+                <div class="app-download">
+                    <img src="https://via.placeholder.com/120x40" alt="Play Store">
+                    <img src="https://via.placeholder.com/120x40" alt="App Store">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Gokart. All rights reserved.<br> Made by ~Yash Shinde</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: ₹<span id="totalAmount">0</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
